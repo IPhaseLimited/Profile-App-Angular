@@ -1,0 +1,16 @@
+<section class="developerinfo">
+
+  <div class="developer cf" ng-model="developers">
+    <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+    <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
+
+    <h1>{{developers[whichItem].name}}</h1>
+    <div class="info">
+      <h3>{{developers[whichItem].reknown}}</h3>
+      <img ng-src="images/{{developers[whichItem].name}}_tn.jpg" alt="Photo of {{developers[whichItem].name}}">
+      <div class="bio">{{developers[whichItem].bio}}</div>
+    </div>
+  </div>
+
+  <a href="index.html">&laquo; Back to search</a>
+</section>
